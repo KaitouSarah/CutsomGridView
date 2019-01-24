@@ -19,9 +19,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         database.execSQL(sql);
     }
 
-    public void intertData(String name, byte[] image) {
+    public void insertData(String name, byte[] image) {
         SQLiteDatabase database = getWritableDatabase();
-        String sql = "INSERT INTO PERSON VALUES (NULL, ?, ?, ?)";
+        String sql = "INSERT INTO PEOPLE VALUES (NULL, ?, ?)";
 
         SQLiteStatement statement = database.compileStatement(sql);
         statement.clearBindings();

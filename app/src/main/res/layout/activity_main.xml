@@ -28,7 +28,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="2dp"
         android:layout_marginTop="124dp"
-        tools:srcCompat="@drawable/frodo" />
+        android:visibility="visible"
+        app:srcCompat="@drawable/pictureicon"
+        tools:srcCompat="@drawable/pictureicon" />
 
     <Button
         android:id="@+id/btnChoose"
